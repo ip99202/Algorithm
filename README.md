@@ -47,3 +47,5 @@
 >    - 이분 탐색(Binary search)
 >    - 재귀(Recursion)
 >    - 최장 증가 수열(LIS)
+> 
+>  - 기하
