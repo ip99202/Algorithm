@@ -48,5 +48,6 @@
 >    - 이분 탐색(Binary search)
 >    - 재귀(Recursion)
 >    - 최장 증가 수열(LIS)
+>    - 투 포인터(Two-pointer)
 > 
 >  - 기하
