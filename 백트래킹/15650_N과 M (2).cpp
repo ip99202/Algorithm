@@ -1,0 +1,29 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+vector<int>v;
+int n, m;
+bool check[10];
+
+void go(int cnt, int here) {
+	if (cnt == m) {
+		for (int i = 0; i < m; i++) {
+			printf("%d ", v[i]);
+		}
+		printf("\n");
+	}
+	for (int i = here; i <= n; i++) {
+		if (!check[i]) {
+			check[i] = true;
+			v.push_back(i);
+			go(cnt + 1, i + 1);
+			check[i] = false;
+			v.pop_back();
+		}
+	}
+}
+
+int main() {
+	scanf("%d%d", &n, &m);
+	go(0, 1);
+}
